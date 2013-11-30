@@ -6,6 +6,6 @@ webp.js
 
 <pre>
 	<code>
-	< img data-src="./test" data-format="png" alt="WebP Image" />
+	/*<img data-src="./test" data-format="png" alt="WebP Image" />*/
 	</code>
 </pre>
