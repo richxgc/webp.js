@@ -29,9 +29,23 @@ webp.js
 ```
 <p>If the browser supports webp the result of img tag will look something like this...</p>
 ```HTML
-	<img data-src="./test" data-format="png" alt="WebP Image" src="./test.webp"/>
+<img data-src="./test" data-format="png" alt="WebP Image" src="./test.webp"/>
 ```
-<p>If the browser NOT supports web will look like this...</p>
+<p>If the browser NOT supports webp will look like this...</p>
 ```HTML
-	<img data-src="./test" data-format="png" alt="WebP Image" src="./test.png"/>
+<img data-src="./test" data-format="png" alt="WebP Image" src="./test.png"/>
 ```
+
+<h4>And, if the user has disabled javascript?</h4>
+<p>Obviously if the user has disabled javascript from his browser, the library not work at all. Solution:</p>
+<ol>
+	<li>Asks the user to enable the javascript duh!</li>
+	<li>Put the same image with png, jpg extension after the webp image, inside of noscript html tag. Example:</li>
+</ol>
+```HTML
+<noscript>
+	<img data-src="./test" data-format="png" alt="WebP Image" src="./test.png"/>
+</noscript>
+```
+<br/>
+<p>At last but not least important, I would like you to contribute with the project if you think is awesome or maybe a little functional, and thanks for the feedback!</p>
