@@ -1,7 +1,7 @@
 webp.js
 ======
 
-<h3>Implement now webp images on your site</h3>
+<h3>Implement now WebP images on your site</h3>
 <p>The library load a webp image if the browser is supported, else load a jpg, png or whatever format you want in img tag</p>
 
 <h4>How can i serve different images for different browsers?</h4>
@@ -19,10 +19,19 @@ webp.js
 </head>
 </html>
 ```
+
 <h4>And now, how load the image files?</h4>
 <p>For achieve the goal of load the correct image and execute one only request to server, we need use the data-* property for img tag, in this case we use data-src & data-format. In the data-src attribute you can specify the filename and path for that file (without extension). On other hand in the data-format attribute you may specify the format (extension) which is loaded in which case of the web browser not supported WebP. Example:</p>
 ```HTML
 <body>
 	<img data-src="./test" data-format="png" alt="WebP Image"/>
 </body>
+```
+<p>If the browser supports webp the result of img tag will look something like this...</p>
+```HTML
+	<img data-src="./test" data-format="png" alt="WebP Image" src="./test.webp"/>
+```
+<p>If the browser NOT supports web will look like this...</p>
+```HTML
+	<img data-src="./test" data-format="png" alt="WebP Image" src="./test.png"/>
 ```
