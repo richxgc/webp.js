@@ -44,7 +44,7 @@ webp.js
 </ol>
 ```HTML
 <noscript>
-	<img data-src="./test" data-format="png" alt="WebP Image" src="./test.png"/>
+	<img src="./test.png" alt="WebP Image"/>
 </noscript>
 ```
 <br/>
